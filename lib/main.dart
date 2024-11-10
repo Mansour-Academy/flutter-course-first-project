@@ -45,6 +45,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('First Project'),
         centerTitle: false,
@@ -60,26 +61,56 @@ class HomePage extends StatelessWidget {
         ],
         leadingWidth: 56,
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+
+        /// outlined button
+        // child: SizedBox(
+        //   width: double.infinity,
+        //   child: OutlinedButton(
+        //     onPressed: () {},
+        //     child: const Text(
+        //       'Press me',
+        //     ),
+        //   ),
+        // ),
+
+        /// text button
+        // child: TextButton(
+        //   onPressed: () {},
+        //   child: const Text(
+        //     'Press me',
+        //   ),
+        // ),
+
+        /// elevated button
         child: SizedBox(
           width: double.infinity,
-          height: double.infinity,
-          child: Text(
-            'loreum ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
-            style: TextStyle(
-              // backgroundColor: Colors.yellow,
-              fontSize: 24,
-              fontWeight: FontWeight.normal,
-              color: Colors.black,
-              // decoration: TextDecoration.underline,
-              decorationThickness: 1,
-              decorationColor: Colors.blue,
+          child: ElevatedButton(
+            onPressed: () {},
+            style: ButtonStyle(
+              backgroundColor: WidgetStateProperty.all(Colors.white),
+              // overlayColor: WidgetStateProperty.all(Colors.red),
+              elevation: WidgetStateProperty.all(0),
+              shape: WidgetStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0),
+                ),
+              ),
+              side: WidgetStateProperty.all(
+                BorderSide(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
             ),
-            textDirection: TextDirection.ltr,
-            // maxLines: 3,
-            // overflow: TextOverflow.ellipsis,
-            // selectionColor: Colors.green,
+            child: const Text(
+              'Press me',
+              // style: TextStyle(
+              //   color: Colors.white,
+              //   fontSize: 24,
+              // ),
+            ),
           ),
         ),
       ),
