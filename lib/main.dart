@@ -47,6 +47,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('First Project'),
+        centerTitle: false,
+        leading: Icon(
+          Icons.menu,
+          color: Colors.white,
+          size: 24,
+        ),
+        titleSpacing: 16,
+        actions: const [
+          Icon(Icons.add),
+          Icon(Icons.add),
+        ],
+        leadingWidth: 56,
       ),
       body: Text(
         'Hello, World!',
