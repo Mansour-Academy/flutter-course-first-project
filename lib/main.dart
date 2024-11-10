@@ -47,48 +47,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('First Project'),
-        centerTitle: false,
-        leading: Icon(
-          Icons.menu,
-          color: Colors.white,
-          size: 24,
-        ),
-        titleSpacing: 16,
-        actions: const [
-          Icon(Icons.add),
-          Icon(Icons.add),
-        ],
-        leadingWidth: 56,
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
-        child: SizedBox(
-          width: double.infinity,
-          height: double.infinity,
-          child: Text(
-            'loreum ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
-            style: TextStyle(
-              // backgroundColor: Colors.yellow,
-              fontSize: 24,
-              fontWeight: FontWeight.normal,
-              color: Colors.black,
-              // decoration: TextDecoration.underline,
-              decorationThickness: 1,
-              decorationColor: Colors.blue,
-            ),
-            textDirection: TextDirection.ltr,
-            // maxLines: 3,
-            // overflow: TextOverflow.ellipsis,
-            // selectionColor: Colors.green,
-          ),
-        ),
+      body: Text(
+        'Hello, World!',
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // Add your onPressed code here!
         },
-        backgroundColor: Colors.blue,
-        splashColor: Colors.red,
         child: const Text('+'),
       ),
     );
