@@ -61,7 +61,20 @@ class HomePage extends StatelessWidget {
         leadingWidth: 56,
       ),
       body: Text(
-        'Hello, World!',
+        'loreum ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+        style: TextStyle(
+          // backgroundColor: Colors.yellow,
+          fontSize: 24,
+          fontWeight: FontWeight.normal,
+          color: Colors.black,
+          decoration: TextDecoration.underline,
+          decorationThickness: 1,
+          decorationColor: Colors.blue,
+        ),
+        textDirection: TextDirection.ltr,
+        maxLines: 3,
+        overflow: TextOverflow.ellipsis,
+        // selectionColor: Colors.green,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
