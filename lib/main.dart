@@ -62,16 +62,17 @@ class HomePage extends StatelessWidget {
         leadingWidth: 56,
       ),
       body: Container(
-        // width: double.infinity,
+        width: double.infinity,
         // height: double.infinity,
         color: Colors.red,
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          child: Row(
+          child: Column(
             mainAxisSize: MainAxisSize.max,
             // mainAxisAlignment: MainAxisAlignment.end,
             // crossAxisAlignment: CrossAxisAlignment.end,
             children: [
+              Placeholder(),
               Container(
                 color: Colors.blue,
                 child: Text(
