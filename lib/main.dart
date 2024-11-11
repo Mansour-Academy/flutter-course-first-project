@@ -62,79 +62,132 @@ class HomePage extends StatelessWidget {
         leadingWidth: 56,
       ),
       body: Container(
-        width: double.infinity,
+        // width: double.infinity,
+        // height: double.infinity,
         color: Colors.red,
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // Image(
-            //   // height: 200,
-            //   // width: 200,
-            //   filterQuality: FilterQuality.low,
-            //   fit: BoxFit.cover,
-            //   image: const AssetImage(
-            //     'assets/images/error.png',
-            //   ),
-            //   // image: NetworkImage(
-            //   //   'https://hips.hearstapps.com/hmg-prod/images/morning-glories-65bd6dcc15366.jpg',
-            //   // ),
-            // ),
-            Expanded(
-              flex: 2,
-              child: Container(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            // mainAxisAlignment: MainAxisAlignment.end,
+            // crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
                 color: Colors.blue,
                 child: Text(
                   'Hello World',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,
                 ),
               ),
-            ),
-            Expanded(
-              child: Text(
+              Text(
                 'Hello World',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 24,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
               ),
-            ),
-            Expanded(
-              child: Container(
-                color: Colors.green,
+              Container(
+                color: Colors.blue,
                 child: Text(
                   'Hello World',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,
                 ),
               ),
-            ),
-            // Image(
-            //   // height: 200,
-            //   // width: 200,
-            //   filterQuality: FilterQuality.low,
-            //   fit: BoxFit.cover,
-            //   image: const AssetImage(
-            //     'assets/images/cat.png',
-            //   ),
-            //   // image: NetworkImage(
-            //   //   'https://hips.hearstapps.com/hmg-prod/images/morning-glories-65bd6dcc15366.jpg',
-            //   // ),
-            // ),
-          ],
+              Text(
+                'Hello World',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
+        // child: Column(
+        //   mainAxisSize: MainAxisSize.max,
+        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //   crossAxisAlignment: CrossAxisAlignment.stretch,
+        //   children: [
+        //     // Image(
+        //     //   // height: 200,
+        //     //   // width: 200,
+        //     //   filterQuality: FilterQuality.low,
+        //     //   fit: BoxFit.cover,
+        //     //   image: const AssetImage(
+        //     //     'assets/images/error.png',
+        //     //   ),
+        //     //   // image: NetworkImage(
+        //     //   //   'https://hips.hearstapps.com/hmg-prod/images/morning-glories-65bd6dcc15366.jpg',
+        //     //   // ),
+        //     // ),
+        //     Expanded(
+        //       flex: 2,
+        //       child: Container(
+        //         color: Colors.blue,
+        //         child: Text(
+        //           'Hello World',
+        //           style: TextStyle(
+        //             color: Colors.black,
+        //             fontSize: 24,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //           textAlign: TextAlign.center,
+        //         ),
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child: Text(
+        //         'Hello World',
+        //         style: TextStyle(
+        //           color: Colors.white,
+        //           fontSize: 24,
+        //           fontWeight: FontWeight.bold,
+        //         ),
+        //         textAlign: TextAlign.center,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child: Container(
+        //         color: Colors.green,
+        //         child: Text(
+        //           'Hello World',
+        //           style: TextStyle(
+        //             color: Colors.black,
+        //             fontSize: 24,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //           textAlign: TextAlign.center,
+        //         ),
+        //       ),
+        //     ),
+        //     // Image(
+        //     //   // height: 200,
+        //     //   // width: 200,
+        //     //   filterQuality: FilterQuality.low,
+        //     //   fit: BoxFit.cover,
+        //     //   image: const AssetImage(
+        //     //     'assets/images/cat.png',
+        //     //   ),
+        //     //   // image: NetworkImage(
+        //     //   //   'https://hips.hearstapps.com/hmg-prod/images/morning-glories-65bd6dcc15366.jpg',
+        //     //   // ),
+        //     // ),
+        //   ],
+        // ),
       ),
       // floatingActionButton: FloatingActionButton(
       //   onPressed: () {
