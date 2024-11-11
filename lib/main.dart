@@ -61,58 +61,17 @@ class HomePage extends StatelessWidget {
         ],
         leadingWidth: 56,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-
-        /// outlined button
-        // child: SizedBox(
-        //   width: double.infinity,
-        //   child: OutlinedButton(
-        //     onPressed: () {},
-        //     child: const Text(
-        //       'Press me',
-        //     ),
-        //   ),
-        // ),
-
-        /// text button
-        // child: TextButton(
-        //   onPressed: () {},
-        //   child: const Text(
-        //     'Press me',
-        //   ),
-        // ),
-
-        /// elevated button
-        child: SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            onPressed: () {},
-            style: ButtonStyle(
-              backgroundColor: WidgetStateProperty.all(Colors.white),
-              // overlayColor: WidgetStateProperty.all(Colors.red),
-              elevation: WidgetStateProperty.all(0),
-              shape: WidgetStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0),
-                ),
-              ),
-              side: WidgetStateProperty.all(
-                BorderSide(
-                  color: Colors.black,
-                  width: 0.5,
-                ),
-              ),
-            ),
-            child: const Text(
-              'Press me',
-              // style: TextStyle(
-              //   color: Colors.white,
-              //   fontSize: 24,
-              // ),
-            ),
-          ),
+      body: Image(
+        // height: 200,
+        // width: 200,
+        filterQuality: FilterQuality.low,
+        fit: BoxFit.cover,
+        image: const AssetImage(
+          'assets/images/error.png',
         ),
+        // image: NetworkImage(
+        //   'https://hips.hearstapps.com/hmg-prod/images/morning-glories-65bd6dcc15366.jpg',
+        // ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
