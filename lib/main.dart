@@ -72,7 +72,12 @@ class HomePage extends StatelessWidget {
             // mainAxisAlignment: MainAxisAlignment.end,
             // crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Placeholder(),
+              // Placeholder(),
+              FlutterLogo(
+                size: 300,
+                style: FlutterLogoStyle.stacked,
+                // textColor: Colors.green,
+              ),
               Container(
                 color: Colors.blue,
                 child: Text(
